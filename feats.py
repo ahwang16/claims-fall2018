@@ -6,7 +6,7 @@ from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.preprocessing import LabelBinarizer
 import sklearn
 import crfsuite
-# import spacy
+import spacy
 
 # Functions to extract features
 # For the ith word in a sentence, return list of features
@@ -54,7 +54,7 @@ for sent in list(doc.sents) :
 
 # Extract features from data
 X_train = [sent2feats(s) for s in train_sents]
-y_train = # labels from other document?
+# y_train = # labels from other document?
 # also need X_test and y_test
 
 # Train model
