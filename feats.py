@@ -12,20 +12,31 @@ import spacy
 # For the ith word in a sentence, return list of features
 def word2feats(sent, i) :
 	token = sent[i]
-	daughters = [c.text for c in token.children]
+	daughters = set(c.text.lower() for c in token.children)
+	ancestors = set(h.lemma_.lower() for h in token.ancestors)
+	lemmas = set("tell", "accuse", "insist", "seem", "believe", "say", "find", "conclude", "claim", "trust", "think", "suspect", "doubt", "suppose")
+	auxdaughter = "nil"
+	moddaughter = "nil"
+	for c in token.children:
+		if c.pos_ == "AUX":
+			auxdaughter = c.text
+		if c.tag_ == "MD":
+			moddaughter = c.text
+
+
 	feats = [
 		"isNumeric=%s" % token.is_alpha,
 		"POS=" + token.pos_,
 		"verbType=" + token.tag_ if token.pos_ == "VERB" else "nil",
-		"whichModalAmI=",
+		"whichModalAmI=", token if token.tag_ == "MD" else "nil",
 		"amVBwithDaughterTo=%s" % token.pos_ == "VERB" and "to" in daughters,
-		"haveDaughterPerfect=%s" % "has" in daughters or "have" in daughters or "had" in daughters,
+		"haveDaughterPerfect=%s" % "has" in daughters or "have" in daughters or "had" in daughters, #check if labeled as modal
 		"haveDaughterShould=%s" % "should" in daughters,
 		"haveDaughterWh=%s" % "where" in daughters or "when" in daughters or "while" in daughters or "who" in daughters or "why" in daughters,
-		"haveReportingAncestor=",
+		"haveReportingAncestor=%s" % token.pos_=="VERB" and len(lemmas.intersectin(ancestors))!=0,
 		"parentPOS=" + token.head.pos_,
-		"whichAuxIsMyDaughter=",
-		"whichModalIsMyDaughter="
+		"whichAuxIsMyDaughter=" + auxdaughter,
+		"whichModalIsMyDaughter=" + moddaughter
 	]
 
 	return feats
@@ -36,6 +47,7 @@ def sent2feats(sent) :
 	return [word2feats(sent, i) for i in range(len(sent))]
 
 # Import dataset
+# Dataset will be a csv with one sentence per line
 sampledata = "i am hungry. computer science is cool."
 
 nlp = spacy.load('en')
