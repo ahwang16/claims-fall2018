@@ -66,6 +66,7 @@ for sent in list(doc.sents) :
 
 # Extract features from data
 X_train = [sent2feats(s) for s in train_sents]
+print(X_train)
 # y_train = # labels from other document?
 # also need X_test and y_test
 
