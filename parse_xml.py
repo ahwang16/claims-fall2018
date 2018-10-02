@@ -1,6 +1,7 @@
 # parse_xml.py
 
 import xml.etree.ElementTree as et
+import spacy
 
 tree = et.ElementTree(file="20000410_nyt-NEW.xml")
 root = tree.getroot()
@@ -28,12 +29,10 @@ while x < len(texttostring):
 		finaltext += texttostring[x]
 	x += 1
 
-# x = 0
-# for t in finaltext:
-# 	print(x, t)
-# 	x += 1
+nlp = spacy.load('en')
+doc = nlp(finaltext)
+print(list(doc.sents))
 
-# print(finaltext[858:865])
 
 attribs = []
 for child in anno:
