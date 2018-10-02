@@ -5,7 +5,7 @@ import nltk
 from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.preprocessing import LabelBinarizer
 import sklearn
-import crfsuite
+import pycrfsuite
 import spacy
 
 # Functions to extract features
