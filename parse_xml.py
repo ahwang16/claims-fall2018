@@ -21,30 +21,36 @@ finaltext = ""
 x = 0
 
 while x < len(texttostring):
-	if texttostring[x] == "<" or texttostring[x] == "&":
+	if texttostring[x] == "<":
 		openbracket = True
-	if texttostring[x] == ">":
+	elif texttostring[x] == "&" and texttostring[x+1]=="l" and texttostring[x+2]=="t" and texttostring[x+3]==";":
+		openbracket = True
+		x += 3
+	elif texttostring[x] == ">":
 		openbracket = False
+	elif texttostring[x] == "&" and texttostring[x+1]=="g" and texttostring[x+2]=="t" and texttostring[x+3]==";":
+		openbracket = False
+		x += 3
 	elif not openbracket:
 		finaltext += texttostring[x]
 	x += 1
 
 nlp = spacy.load('en')
 doc = nlp(finaltext)
-print(list(doc.sents))
-
-
+for l in list(doc.sents):
+	print(l)
 attribs = []
 for child in anno:
 	attribs.append((int(child.attrib['StartNode']), int(child.attrib['EndNode']), child.attrib['Type']))
 # print(attribs)
 
 for t in attribs:
-	if t[0] > 11:
-		print(finaltext[t[0]-39:t[1]-39], t[2])
+	if t[0] > 11 and t[0] < 1161:
+		print(finaltext[t[0]-13:t[1]-13], t[2])
+	elif t[0] > 1160:
+		print(finaltext[t[0]-36:t[1]-36], t[2])
 	else:
 		print(finaltext[t[0]:t[1]], t[2])
-
 
 # write own code to parse through body of text
 # id numbers correspond to character indices
