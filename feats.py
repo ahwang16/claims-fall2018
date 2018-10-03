@@ -7,6 +7,8 @@ from sklearn.preprocessing import LabelBinarizer
 import sklearn
 import pycrfsuite
 import spacy
+import parsexml
+
 
 # Functions to extract features
 # For the ith word in a sentence, return list of features
@@ -47,26 +49,20 @@ def sent2feats(sent) :
 	return [word2feats(sent, i) for i in range(len(sent))]
 
 # Import dataset
-# Dataset will be a csv with one sentence per line
-sampledata = "i am hungry. computer science is cool."
+# Data is list of pairs of words and tags [(word, tag)]
+pairs = prasexml.parse()
+train_sents = []
+for p in pairs:
+	train_sents.append(p[0])
 
-# nlp = spacy.load('en')
-# doc = nlp(sampledata)
 
-# features for entire dataset
-# each element is a list of features for each sentence
-# each list of sentence features is a list of features for each word
-# [[[sent1word1], [sent1word2]], [[sent2word1]]]
-feats = []
-for sent in list(doc.sents) :
-	feats.append(sent2feats(sent))
 
 # CRFsuite tutorial from github
 # https://github.com/scrapinghub/python-crfsuite/blob/master/examples/CoNLL%202002.ipynb
 
 # Extract features from data
-X_train = [sent2feats(s) for s in train_sents]
-print(X_train)
+X_train = [word2feats(s) for s in train_sents]
+y_train = [p[1] for p in pairs]
 # y_train = # labels from other document?
 # also need X_test and y_test
 
