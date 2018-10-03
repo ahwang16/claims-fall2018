@@ -48,29 +48,32 @@ for t in attribs:
 		startlabel[t[0]-13] = t[2] 
 	elif t[0] > 1160:
 		start.append(t[0]-36)
-		startlabel[t[0]-13] = t[2]
+		startlabel[t[0]-36] = t[2]
 	else:
 		start.append(t[0])
 		startlabel[t[0]] = t[2]
-
 pairs = []
 word = ""
 index = 0
 label = ""
-for l in len(finaltext):
-	if finaltext[l] != " ":
+for l in range(len(finaltext)):
+
+	if finaltext[l]=="\n":
+		continue
+	elif finaltext[l] != " ":
 		word += finaltext[l]
 	else:
 		if index in start:
 			label = startlabel[index]
 		else:
 			label = "Not Applicable"
-		word = word.strip(string.punctuation)
+		word = word.strip(string.punctuation).strip()
 		pairs.append((word, label))
 		index = l + 1
+		word = ""
 
-print(pairs)
-
+#for p in pairs:
+#	print(p)
 
 
 
