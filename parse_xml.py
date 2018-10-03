@@ -2,6 +2,7 @@
 
 import xml.etree.ElementTree as et
 import spacy
+import string
 
 tree = et.ElementTree(file="20000410_nyt-NEW.xml")
 root = tree.getroot()
@@ -35,22 +36,45 @@ while x < len(texttostring):
 		finaltext += texttostring[x]
 	x += 1
 
-nlp = spacy.load('en')
-doc = nlp(finaltext)
-for l in list(doc.sents):
-	print(l)
 attribs = []
 for child in anno:
 	attribs.append((int(child.attrib['StartNode']), int(child.attrib['EndNode']), child.attrib['Type']))
-# print(attribs)
 
+start = []
+startlabel = {}
 for t in attribs:
 	if t[0] > 11 and t[0] < 1161:
-		print(finaltext[t[0]-13:t[1]-13], t[2])
+		start.append(t[0]-13)
+		startlabel[t[0]-13] = t[2] 
 	elif t[0] > 1160:
-		print(finaltext[t[0]-36:t[1]-36], t[2])
+		start.append(t[0]-36)
+		startlabel[t[0]-13] = t[2]
 	else:
-		print(finaltext[t[0]:t[1]], t[2])
+		start.append(t[0])
+		startlabel[t[0]] = t[2]
+
+pairs = []
+word = ""
+index = 0
+label = ""
+for l in len(finaltext):
+	if finaltext[l] != " ":
+		word += finaltext[l]
+	else:
+		if index in start:
+			label = startlabel[index]
+		else:
+			label = "Not Applicable"
+		word = word.strip(string.punctuation)
+		pairs.append((word, label))
+		index = l + 1
+
+print(pairs)
+
+
+
+
+
 
 # write own code to parse through body of text
 # id numbers correspond to character indices

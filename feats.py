@@ -12,9 +12,9 @@ import spacy
 # For the ith word in a sentence, return list of features
 def word2feats(sent, i) :
 	token = sent[i]
-	daughters = set(c.text.lower() for c in token.children)
-	ancestors = set(h.lemma_.lower() for h in token.ancestors)
-	lemmas = set("tell", "accuse", "insist", "seem", "believe", "say", "find", "conclude", "claim", "trust", "think", "suspect", "doubt", "suppose")
+	daughters = {c.text.lower() for c in token.children}
+	ancestors = {h.lemma_.lower() for h in token.ancestors}
+	lemmas = {"tell", "accuse", "insist", "seem", "believe", "say", "find", "conclude", "claim", "trust", "think", "suspect", "doubt", "suppose"}
 	auxdaughter = "nil"
 	moddaughter = "nil"
 	for c in token.children:
@@ -50,8 +50,8 @@ def sent2feats(sent) :
 # Dataset will be a csv with one sentence per line
 sampledata = "i am hungry. computer science is cool."
 
-nlp = spacy.load('en')
-doc = nlp(sampledata)
+# nlp = spacy.load('en')
+# doc = nlp(sampledata)
 
 # features for entire dataset
 # each element is a list of features for each sentence
