@@ -48,10 +48,11 @@ for t in attribs:
 		startlabel[t[0]-13] = t[2] 
 	elif t[0] > 1160:
 		start.append(t[0]-36)
-		startlabel[t[0]-13] = t[2]
+		startlabel[t[0]-36] = t[2]
 	else:
 		start.append(t[0])
 		startlabel[t[0]] = t[2]
+
 
 pairs = []
 word = ""
