@@ -50,7 +50,7 @@ def sent2feats(sent) :
 
 # Import dataset
 # Data is list of pairs of words and tags [(word, tag)]
-pairs = prasexml.parse()
+pairs = parsexml.parse()
 train_sents = []
 for p in pairs:
 	train_sents.append(p[0])
@@ -61,7 +61,7 @@ for p in pairs:
 # https://github.com/scrapinghub/python-crfsuite/blob/master/examples/CoNLL%202002.ipynb
 
 # Extract features from data
-X_train = [word2feats(s) for s in train_sents]
+X_train = [word2feats(s, 0) for s in train_sents]
 y_train = [p[1] for p in pairs]
 # y_train = # labels from other document?
 # also need X_test and y_test
