@@ -59,6 +59,8 @@ def parse():
 	word = ""
 	index = 0
 	label = ""
+	# tokenize with spacy first --> each word is a spacy object
+	# keep a count variable to keep track if the start/end nodes match up
 	for l in range(len(finaltext)):
 
 		if finaltext[l]=="\n":
@@ -78,6 +80,7 @@ def parse():
 	return pairs
 
 #for p in pairs:
+i
 #	print(p)
 
 
