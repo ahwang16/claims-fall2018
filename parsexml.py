@@ -55,32 +55,50 @@ def parse():
 			start.append(t[0])
 			startlabel[t[0]] = t[2]
 
-	pairs = []
+	sents = [] # list of sentences, each sentence is a list of words
+	labels = [] # label of corresponding word
 	word = ""
 	index = 0
 	label = ""
+
+	nlp = spacy.load('en')
+	doc = nlp(finaltext)
+
+	sents = list(doc.sents)
+	startnode = 0
+
+	for sent in sents:
+		for word in sent:
+			if startnode in start:
+				labels.append(startlabel[startnode])
+			else:
+				labels.append("Not Applicable")
+			startnode += len(word.string)
+
+
+	return sents, labels
+
 	# tokenize with spacy first --> each word is a spacy object
 	# keep a count variable to keep track if the start/end nodes match up
-	for l in range(len(finaltext)):
+	# for l in range(len(finaltext)):
 
-		if finaltext[l]=="\n":
-			continue
-		elif finaltext[l] != " ":
-			word += finaltext[l]
-		else:
-			if index in start:
-				label = startlabel[index]
-			else:
-				label = "Not Applicable"
-			word = word.strip(string.punctuation).strip()
-			pairs.append((word, label))
-			index = l + 1
-			word = ""
+	# 	if finaltext[l]=="\n":
+	# 		continue
+	# 	elif finaltext[l] != " ":
+	# 		word += finaltext[l]
+	# 	else:
+	# 		if index in start:
+	# 			label = startlabel[index]
+	# 		else:
+	# 			label = "Not Applicable"
+	# 		word = word.strip(string.punctuation).strip()
+	# 		pairs.append((word, label))
+	# 		index = l + 1
+	# 		word = ""
 
-	return pairs
+	# return pairs
 
 #for p in pairs:
-i
 #	print(p)
 
 
