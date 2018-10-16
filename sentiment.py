@@ -1,1 +1,119 @@
-sentiment.py
+# sentiment.py
+
+import math
+
+def dal():
+	daldict = {}
+	with open("dict_of_affect.txt", "r") as dal:
+		for line in dal :
+				linesplit = line.split()
+				daldict[linesplit[0]] = [float(linesplit[1]), float(linesplit[2]), float(linesplit[3])]
+	return daldict
+
+
+# finite state machine to RETAIN or INVERT (negation)
+# Invert state: sign of pleasantness score is inverted
+# Retain state: sign of pleasantness score stays the same
+# sent: sentence (string)
+# scores: vector of DAL pleasantness scores
+# return updated pleasant scores
+def fsm_negate(sent, scores):
+
+	# search for list of negation words --> look at 2005 paper on contextual polarity
+	# expand example of negation words https://www.grammarly.com/blog/negatives/
+	# on the word wont: one's customary behavior in a particular situation.
+	# "Constance, as was her wont, had paid her little attention" --> infrequent
+	negate = ["not", "no", "never", "cannot", "didn't", "can't", "cant", "didnt", "couldnt",
+				"shouldnt", "couldn't", "shouldn't", "nobody", "nothing", "nowhere", "neither",
+				"nor", "none", "doesn't", "doesnt", "isn't", "isnt", "wasn't", "wasnt",
+				"wouldn't", "wouldnt", "won't", "wont"]
+
+	# comparative degree adjectives http://www.sparklebox.co.uk/literacy/vocabulary/word-lists/comparatives-superlatives/#.W8E_2xNKjyw
+	comp_adj = ["worse", "better", "angrier", "bigger", "blacker", "blander", "bluer", "bolder", "bossier",
+				"braver", "briefer", "brighter", "broader", "busier", "calmer", "cheaper", "chewier", "chubbier",
+				"classier", "cleaner", "cleverer", "closer", "cloudier", "clumsier", "coarser", "colder",
+				"cooler", "crazier", "creamier", "creepier", "crispier", "crunchier", "curly", "curvier",
+				"cuter", "damper", "darker", "deadlier", "deeper", "denser", "dirtier", "drier", "duller",
+				"dumber", "dustier", "earlier", "easier", "fainter", "fairer", "fancier", "farther",
+				"faster", "fatter", "fewer", "fiercer", "filthier", "finer", "firmer", "fitter", "flakier", "flatter",
+				"fresher", "friendlier", "fuller", "funnier", "gentler", "gloomier", "greasier", "greater", "greedier",
+				"grosser", "hairier", "handier", "happier", "harder", "harsher", "healthier", "heavier", "higher",
+				"hipper", "hotter", "humbler", "hungrier", "icier", "itchier", "juicier", "kinder", "larger", "later",
+				"lazier", "lighter", "likelier", "littler", "livelier", "longer", "louder", "lovelier", "lower", "madder",
+				"meaner", "messier", "milder", "moister", "narrower", "nastier", "naughtier", "nearer", "neater", "needier",
+				"newer", "nicer", "noisier", "odder", "oilier", "older", "elder", "plainer", "politer",
+				"poorer", "prettier", "prouder", "purer", "quicker", "quieter", "rarer", "rawer", "richer",
+				"riper", "riskier", "roomier", "rougher", "ruder", "rustier", "sadder", "safer", "saltier", "saner",
+				"scarier", "shallower", "sharper", "shinier", "shorter", "shyer", "sillier", "simpler", "sincerer",
+				"skinnier", "sleepier", "slimmer", "slimier", "slower", "smaller", "smarter", "smellier", "smokier",
+				"smoother", "softer", "sooner", "sorer", "sorrier", "sourer", "spicier", "steeper", "stingier",
+				"stranger", "stricter", "stronger", "sunnier", "sweatier", "sweeter", "taller", "tanner", "tastier",
+				"thicker", "thinner", "thirstier", "tinier", "tougher", "truer", "uglier", "warmer", "weaker",
+				"wealthier", "weirder", "wetter", "wider", "wilder", "windier", "wiser", "worldlier", "worthier", "younger"]
+
+	# state is True for RETAIN and False for INVERT
+	# start with RETAIN
+	state = False
+
+	index = 0 # to reference corresponding pleasantness score in scores
+	for word in sent:
+		# INVERT: negate score
+		# switch to RETAIN if current word is but or a comparative degree adjective
+		if state:
+			scores[index] *= -1
+			state = not (word=="but" or word in comp_adj)
+		
+		# RETAIN: leave score
+		# switch to INVERT if current word is a negation
+		else:
+			state = word in comp_adj
+
+		index += 1
+
+	return scores
+
+
+# assigning DAL values
+# assume input is a string (1 sentence)
+# return pleasant, activation, intensity vectors
+def assign_dal(sent, dal):
+	tokens = sent.split()
+	pleasant = []
+	activation = []
+	intensity = []
+
+	for t in tokens:
+		try:
+			pleasant.append(dal[t][0])
+		except:
+			pleasant.append(0.0)
+		try:
+			activation.append(dal[t][1])
+		except:
+			activation.append(0.0)
+		try:
+			intensity.append(dal[t][2])
+		except:
+			intensity.append(0.0)
+		
+
+	return pleasant, activation, intensity
+
+
+# input three vectors: pleasant, activation, intensity
+# return averages of pleasantness, activation, intensity
+# this method should be used for subjective phrases (not whole sent)
+def compute_phrases(plea, acti, inte):
+	p = sum(plea) / len(plea)
+	a = sum(acti) / len(acti)
+	i = sum(inte) / len(inte)
+
+	return p, a, i
+
+
+# input three floats: pleasant, activation, intensity average for phrase
+# return norm (combination of the three scores)
+# need to call this method after calling compute_phrases()
+def add_norm(p, a, i):
+	return math.pow(math.pow(i, 2) + math.pow(a, 2), 0.5) / i
+
