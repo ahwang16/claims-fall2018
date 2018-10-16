@@ -83,6 +83,7 @@ def parse(f):
 
 for filename in os.listdir("./"):
 	if filename.endswith(".xml"):
+		print(filename)
 		print(parse(filename))
 
 	# tokenize with spacy first --> each word is a spacy object
