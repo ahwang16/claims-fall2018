@@ -87,8 +87,8 @@ for filename in os.listdir("./"):
 		try:
 			parse(filename)
 			print("done!")
-		except:
-			print("parse error")
+		except Exception as e:
+			print(e)
 
 	# tokenize with spacy first --> each word is a spacy object
 	# keep a count variable to keep track if the start/end nodes match up
