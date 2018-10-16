@@ -76,7 +76,6 @@ def parse(f):
 				labels.append("Not Applicable")
 			startnode += len(word.string)
 
-
 	return sents, labels
 
 
