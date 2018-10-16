@@ -84,7 +84,10 @@ def parse(f):
 for filename in os.listdir("./"):
 	if filename.endswith(".xml"):
 		print(filename)
-		print(parse(filename))
+		try:
+			print(parse(filename))
+		except:
+			print("parse error")
 
 	# tokenize with spacy first --> each word is a spacy object
 	# keep a count variable to keep track if the start/end nodes match up
