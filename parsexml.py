@@ -7,11 +7,7 @@ import os
 
 
 def parse(f):
-<<<<<<< HEAD
 	tree = et.parse(f)
-=======
-	tree = et.ElementTree(file=f)
->>>>>>> f233e6dc3ef6d2301e66b4758d3bd90e59ffc0a3
 	root = tree.getroot()
 	text = root[1]
 
