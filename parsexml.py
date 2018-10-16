@@ -3,10 +3,11 @@
 import xml.etree.ElementTree as et
 import spacy
 import string
+import os
 
 
-def parse():
-	tree = et.ElementTree(file="20000410_nyt-NEW.xml")
+def parse(f):
+	tree = et.parse(f)
 	root = tree.getroot()
 	text = root[1]
 
@@ -17,7 +18,7 @@ def parse():
 	# 	print(r.tag, r.text)
 
 	# print(et.tostring(root[1]))
-	texttostring = et.tostring(root[1]).decode().strip()
+	texttostring = et.fromstring(root[1]).decode().strip()
 	# print(texttostring)
 	openbracket = False
 	finaltext = ""
@@ -77,6 +78,17 @@ def parse():
 
 
 	return sents, labels
+
+
+
+for filename in os.listdir("./"):
+	if filename.endswith(".xml"):
+		print(filename)
+		try:
+			parse(filename)
+			print("done!")
+		except:
+			print("parse error")
 
 	# tokenize with spacy first --> each word is a spacy object
 	# keep a count variable to keep track if the start/end nodes match up
