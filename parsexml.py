@@ -9,7 +9,7 @@ import os
 def parse(f):
 	tree = et.parse(f)
 	root = tree.getroot()
-	text = root[1].text.decode().strip()
+	text = et.tostring(root[1], encoding="utf-u").decode().strip()
 	print(type(text))
 
 	# print(text.text)
