@@ -9,7 +9,7 @@ import os
 def parse(f):
 	tree = et.parse(f)
 	root = tree.getroot()
-	text = et.tostring(root[1], encoding="utf-8").decode().strip()
+	text = root[0]
 	print(type(text))
 
 	# print(text.text)
@@ -19,7 +19,7 @@ def parse(f):
 	# 	print(r.tag, r.text)
 
 	# print(et.tostring(root[1]))
-	texttostring = et.fromstring(text)
+	texttostring = et.tostring(text, encoding="utf8", method="xml").decode()
 	# print(texttostring)
 	openbracket = False
 	finaltext = ""
