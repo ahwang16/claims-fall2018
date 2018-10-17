@@ -10,6 +10,7 @@ def parse(f):
 	tree = et.parse(f)
 	root = tree.getroot()
 	text = root[1]
+	print(type(text))
 
 	# print(text.text)
 	anno = root[3]
