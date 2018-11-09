@@ -109,7 +109,7 @@ X_test = [sent2feats(s) for s in test_sents]
 y_test = test_labels
 
 # Train model
-trainer = crfsuite.Trainer(verbose=True)
+trainer = pycrfsuite.Trainer(verbose=True)
 
 for xseq, yseq in zip(X_train, y_train) :
 	trainer.append(xseq, yseq)
@@ -124,7 +124,7 @@ trainer.set_params({
 trainer.train('claims.crfsuite')
 
 # Make predictions
-tagger = crfsuite.Tagger()
+tagger = pycrfsuite.Tagger()
 tagger.open('claims.crfsuite')
 
 y_pred = [tagger.tag(xseq) for xseq in X_test]
