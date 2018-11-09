@@ -8,6 +8,8 @@ import sklearn
 import crfsuite
 import spacy
 import parsexml
+from collections import Counter
+
 
 
 # Functions to extract features
@@ -48,9 +50,51 @@ def word2feats(sent, i) :
 def sent2feats(sent) :
 	return [word2feats(sent, i) for i in range(len(sent))]
 
+
+def classify(y_true, y_pred):
+	lb = LabelBinarizer()
+	y_true_combined = lb.fit_transform(list(chain.from_iterable(y_true)))
+    y_pred_combined = lb.transform(list(chain.from_iterable(y_pred)))
+        
+    tagset = set(lb.classes_) - {'O'}
+    tagset = sorted(tagset, key=lambda tag: tag.split('-', 1)[::-1])
+    class_indices = {cls: idx for idx, cls in enumerate(lb.classes_)}
+    
+    return classification_report(
+        y_true_combined,
+        y_pred_combined,
+        labels = [class_indices[cls] for cls in tagset],
+        target_names = tagset,
+    )
+
+
+def print_transitions(trans_features):
+    for (label_from, label_to), weight in trans_features:
+        print("%-6s -> %-7s %0.6f" % (label_from, label_to, weight))
+
+
+def print_state_features(state_features):
+    for (attr, label), weight in state_features:
+        print("%0.6f %-6s %s" % (weight, label, attr))    
+
+
 # Import dataset
 # Data is list of pairs of words and tags [(word, tag)]
 sents, labels = parsexml.parse("20000410_nyt-NEW.xml")
+
+# Test data
+test_sents = []
+test_labels = []
+for filename in os.listdir("./featsdata/"):
+	if filename.endswith(".xml"):
+		print(filename)
+		try:
+			s, l = parsexml.parse(filename)
+			test_sents.append(s)
+			test_labels.append(l)
+			print("done!")
+		except Exception as e:
+			print(e)
 
 
 
@@ -60,8 +104,8 @@ sents, labels = parsexml.parse("20000410_nyt-NEW.xml")
 # Extract features from data
 X_train = [sent2feats(s) for s in sents]
 y_train = labels
-# y_train = # labels from other document?
-# also need X_test and y_test
+X_test = [sent2feats(s) for s in test_sents]
+y_test = test_labels
 
 # Train model
 trainer = crfsuite.Trainer(verbose=True)
@@ -81,4 +125,19 @@ trainer.train('claims.crfsuite')
 # Make predictions
 tagger = crfsuite.Tagger()
 tagger.open('claims.crfsuite')
+
+y_pred = [tagger.tag(xseq) for xseq in X_test]
+print(classify(y_test, y_pred))
+
+print("Top likely transitions:")
+print_transitions(Counter(info.transitions).most_common(15))
+
+print("\nTop unlikely transitions:")
+print_transitions(Counter(info.transitions).most_common()[-15:])
+
+print("Top positive:")
+print_state_features(Counter(info.state_features).most_common(20))
+
+print("\nTop negative:")
+print_state_features(Counter(info.state_features).most_common()[-20:])
 
