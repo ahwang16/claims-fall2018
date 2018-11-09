@@ -80,15 +80,15 @@ def parse(f):
 	return sents, labels
 
 
-
-for filename in os.listdir("./"):
-	if filename.endswith(".xml"):
-		print(filename)
-		try:
-			parse(filename)
-			print("done!")
-		except Exception as e:
-			print(e)
+if __name__ == "__main__":
+	for filename in os.listdir("./"):
+		if filename.endswith(".xml"):
+			print(filename)
+			try:
+				parse(filename)
+				print("done!")
+			except Exception as e:
+				print(e)
 
 	# tokenize with spacy first --> each word is a spacy object
 	# keep a count variable to keep track if the start/end nodes match up

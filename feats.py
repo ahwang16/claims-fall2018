@@ -35,7 +35,7 @@ def word2feats(sent, i) :
 		"haveDaughterPerfect=%s" % "has" in daughters or "have" in daughters or "had" in daughters, #check if labeled as modal
 		"haveDaughterShould=%s" % "should" in daughters,
 		"haveDaughterWh=%s" % "where" in daughters or "when" in daughters or "while" in daughters or "who" in daughters or "why" in daughters,
-		"haveReportingAncestor=%s" % token.pos_=="VERB" and len(lemmas.intersectin(ancestors))!=0,
+		"haveReportingAncestor=%s" % token.pos_=="VERB" and len(lemmas.intersection(ancestors))!=0,
 		"parentPOS=" + token.head.pos_,
 		"whichAuxIsMyDaughter=" + auxdaughter,
 		"whichModalIsMyDaughter=" + moddaughter
@@ -50,7 +50,7 @@ def sent2feats(sent) :
 
 # Import dataset
 # Data is list of pairs of words and tags [(word, tag)]
-sents, labels = parsexml.parse()
+sents, labels = parsexml.parse("20000410_nyt-NEW.xml")
 
 
 

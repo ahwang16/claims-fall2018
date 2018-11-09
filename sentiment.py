@@ -117,3 +117,16 @@ def compute_phrases(plea, acti, inte):
 def add_norm(p, a, i):
 	return math.pow(math.pow(i, 2) + math.pow(a, 2), 0.5) / i
 
+
+# Not sure what's going on here
+def chunk(sent):
+	# http://www.chokkan.org/software/crfsuite/tutorial.html
+
+
+
+
+
+
+
+
+
