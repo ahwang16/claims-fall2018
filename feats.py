@@ -90,7 +90,7 @@ for filename in os.listdir("./featsdata/"):
 	if filename.endswith(".xml"):
 		print(filename)
 		try:
-			s, l = parsexml.parse("./featsdata'/" + filename)
+			s, l = parsexml.parse("./featsdata/" + filename)
 			test_sents.append(s)
 			test_labels.append(l)
 			print("done!")
