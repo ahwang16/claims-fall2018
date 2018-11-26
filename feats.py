@@ -16,6 +16,7 @@ import os
 # Functions to extract features
 # For the ith word in a sentence, return list of features
 def word2feats(sent, i) :
+	print(type(sent), type(sent[i]))
 	token = sent[i]
 	daughters = {c.text.lower() for c in token.children}
 	ancestors = {h.lemma_.lower() for h in token.ancestors}
