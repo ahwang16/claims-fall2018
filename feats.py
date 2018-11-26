@@ -18,6 +18,7 @@ import os
 def word2feats(sent, i) :
 	print(type(sent), type(sent[i]))
 	token = sent[i]
+	print(type(token))
 	daughters = {c.text.lower() for c in token.children}
 	ancestors = {h.lemma_.lower() for h in token.ancestors}
 	lemmas = {"tell", "accuse", "insist", "seem", "believe", "say", "find", "conclude", "claim", "trust", "think", "suspect", "doubt", "suppose"}
@@ -29,12 +30,13 @@ def word2feats(sent, i) :
 		if c.tag_ == "MD":
 			moddaughter = c.text
 
-
+	'''
+	all features
 	feats = [
 		"isNumeric=%s" % token.is_alpha,
 		"POS=" + token.pos_,
 		"verbType=" + token.tag_ if token.pos_ == "VERB" else "nil",
-		"whichModalAmI=", token if token.tag_ == "MD" else "nil",
+		"whichModalAmI=" + token if token.tag_ == "MD" else "nil",
 		"amVBwithDaughterTo=%s" % token.pos_ == "VERB" and "to" in daughters,
 		"haveDaughterPerfect=%s" % "has" in daughters or "have" in daughters or "had" in daughters, #check if labeled as modal
 		"haveDaughterShould=%s" % "should" in daughters,
@@ -44,8 +46,56 @@ def word2feats(sent, i) :
 		"whichAuxIsMyDaughter=" + auxdaughter,
 		"whichModalIsMyDaughter=" + moddaughter
 	]
+	'''
+
+	# lexical and syntactic features with no context
+	feats = [
+		"POS=" + token.pos_,
+		"whichModalAmI=" + token if token.tag_ == "MD" else "nil",
+		"parentPOS=" + token.head.pos_,
+
+	]
+
+	'''
+	# lexical features with context
+	feats = [
+		"POS=" + token.pos_,
+		"whichModalAmI=" + token if token.tag_ == "MD" else "nil",
+		"verbType=" + token.tag_ if token.pos_ == "VERB" else "nil",
+		"isNumeric%s" % token.is_alpha,
+		"haveReportingAncestor=%s" % token.pos_=="VERB" and len(lemmas.intersection(ancestors))!=0,
+		"whichModalIsMyDaughter=" + moddaughter,
+		"whichAuxIsMyDaughter=" + auxdaughter,
+		"haveDaughterShould=%s" % "should" in daughters
+	]
+
+	# lexical features with context and syntactic features with no context
+	feats = [
+		"POS=" + token.pos_,
+		"whichModalAmI=" + token if token.tag_ == "MD" else "nil",
+		"parentPOS=" + token.head.pos_,
+		"haveReportingAncestor=%s" % token.pos_=="VERB" and len(lemmas.intersection(ancestors))!=0,
+		"whichModalIsMyDaughter=" + moddaughter,
+		"whichAuxIsMyDaughter=" + auxdaughter,
+		"haveDaughterShould=%s" % "should" in daughters
+	]
+
+	# lexical and syntactic features with context
+	feats = [
+		"POS=" + token.pos_,
+		"whichModalAmI=" + token if token.tag_ == "MD" else "nil",
+		"parentPOS=" + token.head.pos_,
+		"haveReportingAncestor=%s" % token.pos_=="VERB" and len(lemmas.intersection(ancestors))!=0,
+		"whichModalIsMyDaughter=" + moddaughter,
+		"haveDaughterPerfect=%s" % "has" in daughters or "have" in daughters or "had" in daughters,
+		"whichAuxIsMyDaughter=" + auxdaughter,
+		"haveDaughterWh=%s" % "where" in daughters or "when" in daughters or "while" in daughters or "who" in daughters or "why" in daughters,
+		"haveDaughterShould=%s" % "should" in daughters
+	]
+	'''
 
 	return feats
+
 
 # Return list of lists of features for each word in a sentence
 # sent is a sentence parsed by spacy
