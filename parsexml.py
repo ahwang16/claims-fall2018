@@ -5,6 +5,7 @@ import spacy
 import string
 import os
 
+nlp = spacy.load('en')
 
 def parse(f):
 	tree = et.parse(f)
@@ -63,19 +64,24 @@ def parse(f):
 	index = 0
 	label = ""
 
-	nlp = spacy.load('en')
 	doc = nlp(finaltext)
 
-	sents = list(doc.sents)
+
+	spacy_sents = list(doc.sents) # doc.sents is a list of spans
 	startnode = 0
 
 	for sent in sents:
+		s = []
 		for word in sent:
+			s.append(word)
 			if startnode in start:
 				labels.append(startlabel[startnode])
 			else:
 				labels.append("Not Applicable")
 			startnode += len(word.string)
+		sents.append(s)
+	
+
 
 	return sents, labels
 
