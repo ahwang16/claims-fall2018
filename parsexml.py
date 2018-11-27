@@ -10,12 +10,11 @@ nlp = spacy.load('en')
 def parse(f):
 	tree = et.parse(f)
 	root = tree.getroot()
-	text = root[0]
-	print(type(text))
-
+	text = root[1]
+	# print(root[1])
 	# print(text.text)
 	anno = root[3]
-
+	# print(anno)
 	# for r in et.tostring(root[1]):
 	# 	print(r.tag, r.text)
 
@@ -38,7 +37,7 @@ def parse(f):
 			openbracket = False
 			x += 3
 		elif not openbracket:
-			finaltext += texttostring[x]
+			finaltext += texttostring[x].strip('\n')
 		x += 1
 
 	attribs = []
@@ -82,7 +81,7 @@ def parse(f):
 			startnode += len(word.string)
 		sents.append(s)
 		labels.append(l)
-	
+	print(sents, labels)	
 	return sents, labels
 
 
