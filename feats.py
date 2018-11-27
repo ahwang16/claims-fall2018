@@ -94,6 +94,8 @@ def word2feats(sent, i) :
 	'''
 
 	return feats
+ 
+
 
 
 # Return list of lists of features for each word in a sentence
