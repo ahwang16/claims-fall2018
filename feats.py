@@ -17,12 +17,13 @@ import os
 # For the ith word in a sentence, return list of features
 def word2feats(sent, i) :
 	token = sent[i]
+	print(sent, i)
+	print("token:", token, ", token type:", type(token), ", sent type:", type(sent))
 	daughters = {c.text.lower() for c in token.children}
 	ancestors = {h.lemma_.lower() for h in token.ancestors}
 	lemmas = {"tell", "accuse", "insist", "seem", "believe", "say", "find", "conclude", "claim", "trust", "think", "suspect", "doubt", "suppose"}
 	auxdaughter = "nil"
 	moddaughter = "nil"
-	print(token.children)
 	for c in token.children:
 		if c.pos_ == "AUX":
 			auxdaughter = c.text
@@ -50,7 +51,7 @@ def word2feats(sent, i) :
 	# lexical and syntactic features with no context
 	feats = [
 		"POS=" + token.pos_,
-		"whichModalAmI=" + token if token.tag_ == "MD" else "nil",
+		"whichModalAmI=" + token.text if token.tag_ == "MD" else "nil",
 		"parentPOS=" + token.head.pos_,
 
 	]
@@ -59,7 +60,7 @@ def word2feats(sent, i) :
 	# lexical features with context
 	feats = [
 		"POS=" + token.pos_,
-		"whichModalAmI=" + token if token.tag_ == "MD" else "nil",
+		"whichModalAmI=" + token.text if token.tag_ == "MD" else "nil",
 		"verbType=" + token.tag_ if token.pos_ == "VERB" else "nil",
 		"isNumeric%s" % token.is_alpha,
 		"haveReportingAncestor=%s" % token.pos_=="VERB" and len(lemmas.intersection(ancestors))!=0,
@@ -71,7 +72,7 @@ def word2feats(sent, i) :
 	# lexical features with context and syntactic features with no context
 	feats = [
 		"POS=" + token.pos_,
-		"whichModalAmI=" + token if token.tag_ == "MD" else "nil",
+		"whichModalAmI=" + token.text if token.tag_ == "MD" else "nil",
 		"parentPOS=" + token.head.pos_,
 		"haveReportingAncestor=%s" % token.pos_=="VERB" and len(lemmas.intersection(ancestors))!=0,
 		"whichModalIsMyDaughter=" + moddaughter,
@@ -82,7 +83,7 @@ def word2feats(sent, i) :
 	# lexical and syntactic features with context
 	feats = [
 		"POS=" + token.pos_,
-		"whichModalAmI=" + token if token.tag_ == "MD" else "nil",
+		"whichModalAmI=" + token.text if token.tag_ == "MD" else "nil",
 		"parentPOS=" + token.head.pos_,
 		"haveReportingAncestor=%s" % token.pos_=="VERB" and len(lemmas.intersection(ancestors))!=0,
 		"whichModalIsMyDaughter=" + moddaughter,
@@ -131,7 +132,7 @@ def print_state_features(state_features):
         print("%0.6f %-6s %s" % (weight, label, attr))    
 
 
-if __name__ == __main__:
+if __name__ == "__main__":
 	# Import dataset
 	# Data is list of pairs of words and tags [(word, tag)]
 	sents, labels = parsexml.parse("20000410_nyt-NEW.xml")
@@ -144,8 +145,8 @@ if __name__ == __main__:
 			print(filename)
 			try:
 				s, l = parsexml.parse("./featsdata/" + filename)
-				test_sents.append(s)
-				test_labels.append(l)
+				test_sents += s
+				test_labels += l
 				print("done!")
 			except Exception as e:
 				print(e)
@@ -182,6 +183,9 @@ if __name__ == __main__:
 
 	y_pred = [tagger.tag(xseq) for xseq in X_test]
 	print(classify(y_test, y_pred))
+
+	# Check what classifier learned
+	info = tagger.info()
 
 	print("Top likely transitions:")
 	print_transitions(Counter(info.transitions).most_common(15))
