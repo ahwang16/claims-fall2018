@@ -77,17 +77,12 @@ def parse(f):
 			s.append(word)
 			if startnode in start:
 				l.append(startlabel[startnode])
-				print(startlabel[startnode])
 			else:
 				l.append("Not Applicable")
-				print("Not Applicable")
 			startnode += len(word.string)
 		sents.append(s)
 		labels.append(l)
 	
-
-	print("sents", sents, "labels", labels)
-
 	return sents, labels
 
 

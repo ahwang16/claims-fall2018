@@ -22,6 +22,7 @@ def word2feats(sent, i) :
 	lemmas = {"tell", "accuse", "insist", "seem", "believe", "say", "find", "conclude", "claim", "trust", "think", "suspect", "doubt", "suppose"}
 	auxdaughter = "nil"
 	moddaughter = "nil"
+	print(token.children)
 	for c in token.children:
 		if c.pos_ == "AUX":
 			auxdaughter = c.text
@@ -128,66 +129,67 @@ def print_state_features(state_features):
         print("%0.6f %-6s %s" % (weight, label, attr))    
 
 
-# Import dataset
-# Data is list of pairs of words and tags [(word, tag)]
-sents, labels = parsexml.parse("20000410_nyt-NEW.xml")
+if __name__ == __main__:
+	# Import dataset
+	# Data is list of pairs of words and tags [(word, tag)]
+	sents, labels = parsexml.parse("20000410_nyt-NEW.xml")
 
-# Test data
-test_sents = []
-test_labels = []
-for filename in os.listdir("./featsdata/"):
-	if filename.endswith(".xml"):
-		print(filename)
-		try:
-			s, l = parsexml.parse("./featsdata/" + filename)
-			test_sents.append(s)
-			test_labels.append(l)
-			print("done!")
-		except Exception as e:
-			print(e)
+	# Test data
+	test_sents = []
+	test_labels = []
+	for filename in os.listdir("./featsdata/"):
+		if filename.endswith(".xml"):
+			print(filename)
+			try:
+				s, l = parsexml.parse("./featsdata/" + filename)
+				test_sents.append(s)
+				test_labels.append(l)
+				print("done!")
+			except Exception as e:
+				print(e)
 
 
 
-# CRFsuite tutorial from github
-# https://github.com/scrapinghub/python-crfsuite/blob/master/examples/CoNLL%202002.ipynb
+	# CRFsuite tutorial from github
+	# https://github.com/scrapinghub/python-crfsuite/blob/master/examples/CoNLL%202002.ipynb
 
-# Extract features from data
-X_train = [sent2feats(s) for s in sents]
-y_train = labels
-X_test = [sent2feats(s) for s in test_sents]
-y_test = test_labels
+	# Extract features from data
+	X_train = [sent2feats(s) for s in sents]
+	y_train = labels
+	X_test = [sent2feats(s) for s in test_sents]
+	y_test = test_labels
 
-# Train model
-trainer = pycrfsuite.Trainer(verbose=True)
+	# Train model
+	trainer = pycrfsuite.Trainer(verbose=True)
 
-for xseq, yseq in zip(X_train, y_train) :
-	trainer.append(xseq, yseq)
+	for xseq, yseq in zip(X_train, y_train) :
+		trainer.append(xseq, yseq)
 
-trainer.set_params({
-	'c1': 1.0,
-	'c2': 1e-3,
-	'max_iterations': 50,
-	'feature.possible_transitions': True
-})
+	trainer.set_params({
+		'c1': 1.0,
+		'c2': 1e-3,
+		'max_iterations': 50,
+		'feature.possible_transitions': True
+	})
 
-trainer.train('claims.crfsuite')
+	trainer.train('claims.crfsuite')
 
-# Make predictions
-tagger = pycrfsuite.Tagger()
-tagger.open('claims.crfsuite')
+	# Make predictions
+	tagger = pycrfsuite.Tagger()
+	tagger.open('claims.crfsuite')
 
-y_pred = [tagger.tag(xseq) for xseq in X_test]
-print(classify(y_test, y_pred))
+	y_pred = [tagger.tag(xseq) for xseq in X_test]
+	print(classify(y_test, y_pred))
 
-print("Top likely transitions:")
-print_transitions(Counter(info.transitions).most_common(15))
+	print("Top likely transitions:")
+	print_transitions(Counter(info.transitions).most_common(15))
 
-print("\nTop unlikely transitions:")
-print_transitions(Counter(info.transitions).most_common()[-15:])
+	print("\nTop unlikely transitions:")
+	print_transitions(Counter(info.transitions).most_common()[-15:])
 
-print("Top positive:")
-print_state_features(Counter(info.state_features).most_common(20))
+	print("Top positive:")
+	print_state_features(Counter(info.state_features).most_common(20))
 
-print("\nTop negative:")
-print_state_features(Counter(info.state_features).most_common()[-20:])
+	print("\nTop negative:")
+	print_state_features(Counter(info.state_features).most_common()[-20:])
 
