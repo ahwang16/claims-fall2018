@@ -142,7 +142,6 @@ for filename in os.listdir("./featsdata/"):
 			s, l = parsexml.parse("./featsdata/" + filename)
 			test_sents.append(s)
 			test_labels.append(l)
-			print("label", l)
 			print("done!")
 		except Exception as e:
 			print(e)

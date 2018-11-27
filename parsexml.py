@@ -72,16 +72,21 @@ def parse(f):
 
 	for sent in sents:
 		s = []
+		l = []
 		for word in sent:
 			s.append(word)
 			if startnode in start:
-				labels.append(startlabel[startnode])
+				l.append(startlabel[startnode])
+				print(startlabel[startnode])
 			else:
-				labels.append("Not Applicable")
+				l.append("Not Applicable")
+				print("Not Applicable")
 			startnode += len(word.string)
 		sents.append(s)
+		labels.append(l)
 	
 
+	print("sents", sents, "labels", labels)
 
 	return sents, labels
 
