@@ -70,7 +70,7 @@ def parse(f):
 	spacy_sents = list(doc.sents) # doc.sents is a list of spans
 	startnode = 0
 
-	for sent in sents:
+	for sent in spacy_sents:
 		s = []
 		l = []
 		for word in sent:
