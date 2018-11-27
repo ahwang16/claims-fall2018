@@ -18,7 +18,6 @@ import os
 def word2feats(sent, i) :
 	print(type(sent), type(sent[i]))
 	token = sent[i]
-	print(type(token))
 	daughters = {c.text.lower() for c in token.children}
 	ancestors = {h.lemma_.lower() for h in token.ancestors}
 	lemmas = {"tell", "accuse", "insist", "seem", "believe", "say", "find", "conclude", "claim", "trust", "think", "suspect", "doubt", "suppose"}
@@ -144,6 +143,7 @@ for filename in os.listdir("./featsdata/"):
 			s, l = parsexml.parse("./featsdata/" + filename)
 			test_sents.append(s)
 			test_labels.append(l)
+			print("label", l)
 			print("done!")
 		except Exception as e:
 			print(e)
