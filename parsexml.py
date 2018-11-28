@@ -1,4 +1,4 @@
-# parse_xml.py
+#parse_xml.py
 
 import xml.etree.ElementTree as et
 import spacy
@@ -81,7 +81,7 @@ def parse(f):
 			startnode += len(word.string)
 		sents.append(s)
 		labels.append(l)
-	print(sents, labels)	
+	#print(sents, labels)	
 	return sents, labels
 
 

@@ -17,8 +17,8 @@ import os
 # For the ith word in a sentence, return list of features
 def word2feats(sent, i) :
 	token = sent[i]
-	print(sent, i)
-	print("token:", token, ", token type:", type(token), ", sent type:", type(sent))
+#	print(sent, i)
+#	print("token:", token, ", token type:", type(token), ", sent type:", type(sent))
 	daughters = {c.text.lower() for c in token.children}
 	ancestors = {h.lemma_.lower() for h in token.ancestors}
 	lemmas = {"tell", "accuse", "insist", "seem", "believe", "say", "find", "conclude", "claim", "trust", "think", "suspect", "doubt", "suppose"}
