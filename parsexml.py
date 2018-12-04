@@ -47,15 +47,17 @@ def parse(f):
 	start = []
 	startlabel = {}
 	for t in attribs:
-		if t[0] > 11 and t[0] < 1161:
-			start.append(t[0]-13)
-			startlabel[t[0]-13] = t[2] 
-		elif t[0] > 1160:
-			start.append(t[0]-36)
-			startlabel[t[0]-36] = t[2]
-		else:
-			start.append(t[0])
-			startlabel[t[0]] = t[2]
+		# if t[0] > 11 and t[0] < 1161:
+		# 	start.append(t[0]-13)
+		# 	startlabel[t[0]-13] = t[2] 
+		# elif t[0] > 1160:
+		# 	start.append(t[0]-36)
+		# 	startlabel[t[0]-36] = t[2]
+		# else:
+		# 	start.append(t[0])
+		# 	startlabel[t[0]] = t[2]
+		start.append(t[0])
+		startlabel[t[0]] = t[2]
 
 	sents = [] # list of sentences, each sentence is a list of words
 	labels = [] # label of corresponding word
@@ -81,7 +83,7 @@ def parse(f):
 			startnode += len(word.string)
 		sents.append(s)
 		labels.append(l)
-	#print(sents, labels)	
+	print(sents, labels)	
 	return sents, labels
 
 
