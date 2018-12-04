@@ -1,4 +1,4 @@
-# parsesentiment.py
+#parsesentiment.py
 
 '''
 Directory structure (of relevant files):
@@ -66,12 +66,12 @@ def parse(doc_name, ann_name):
 				phrase = ""
 
 				while(start < stop):
-					phrase += doc.read(1)
+					phrase += doc.read(1).decode('utf-8')
 					start += 1
 
 				sents.append(phrase)
 
-				out.write("{} {}".format(pol.upper(), phrase))
+				out.write("{} {}\n".format(pol.upper(), phrase))
 		
 		line = ann.readline()
 
