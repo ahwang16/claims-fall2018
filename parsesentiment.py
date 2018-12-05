@@ -109,4 +109,4 @@ if __name__ == "__main__":
 	doc = "/proj/nlp/users/alyssa/claims-fall2018/database.mpqa.1.2/docs/20010620/13.40.05-15087"
 	sen = "/proj/nlp/users/alyssa/claims-fall2018/database.mpqa.1.2/man_anns/20010620/13.40.05-15087/gatesentences.mpqa.1.2"
 
-	parse(doc, ann)
+	parse(doc, ann, sen)
