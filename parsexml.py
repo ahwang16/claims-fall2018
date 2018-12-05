@@ -4,6 +4,7 @@ import xml.etree.ElementTree as et
 import spacy
 import string
 import os
+import json
 
 nlp = spacy.load('en')
 
@@ -25,7 +26,8 @@ def parse(f):
 	finaltext = ""
 	x = 0
 
-	while x < len(texttostring):
+	while x < len(texttostring)-1:
+		#print(json.dumps(texttostring[x]))
 		if texttostring[x] == "<":
 			openbracket = True
 		elif texttostring[x] == "&" and texttostring[x+1]=="l" and texttostring[x+2]=="t" and texttostring[x+3]==";":
@@ -37,25 +39,31 @@ def parse(f):
 			openbracket = False
 			x += 3
 		elif not openbracket:
-			finaltext += texttostring[x].strip('\n')
+			#finaltext += texttostring[x]
+			if texttostring[x] == "\n":
+				#if texttostring[x+1] == "\n":
+				#	x += 1
+				finaltext += " "
+			elif texttostring[x] != "\n":
+				finaltext += texttostring[x].strip('\n')
 		x += 1
-
+	finaltext = finaltext[1:]
+	print(finaltext)
 	attribs = []
 	for child in anno:
 		attribs.append((int(child.attrib['StartNode']), int(child.attrib['EndNode']), child.attrib['Type']))
-
 	start = []
 	startlabel = {}
 	for t in attribs:
-		# if t[0] > 11 and t[0] < 1161:
-		# 	start.append(t[0]-13)
-		# 	startlabel[t[0]-13] = t[2] 
-		# elif t[0] > 1160:
-		# 	start.append(t[0]-36)
-		# 	startlabel[t[0]-36] = t[2]
-		# else:
-		# 	start.append(t[0])
-		# 	startlabel[t[0]] = t[2]
+#		if t[0] > 11 and t[0] < 1161:
+#			start.append(t[0]-18)
+#			startlabel[t[0]-18] = t[2] 
+#		elif t[0] > 1160:
+#			start.append(t[0]-36)
+#			startlabel[t[0]-36] = t[2]
+#		else:
+#			start.append(t[0])
+#			startlabel[t[0]] = t[2]
 		start.append(t[0])
 		startlabel[t[0]] = t[2]
 
@@ -70,20 +78,23 @@ def parse(f):
 
 	spacy_sents = list(doc.sents) # doc.sents is a list of spans
 	startnode = 0
+	print(sorted(startlabel))
 
 	for sent in spacy_sents:
 		s = []
 		l = []
 		for word in sent:
 			s.append(word)
+			print(word, startnode)
 			if startnode in start:
 				l.append(startlabel[startnode])
 			else:
 				l.append("Not Applicable")
+			print(l[-1])
 			startnode += len(word.string)
 		sents.append(s)
 		labels.append(l)
-	print(sents, labels)	
+	#print(sents, labels)	
 	return sents, labels
 
 
