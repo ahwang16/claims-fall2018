@@ -1,6 +1,7 @@
 # sentiment.py
 
 import math
+from nltk.corpus import wordnet as wn
 
 def dal():
 	daldict = {}
@@ -76,6 +77,7 @@ def fsm_negate(sent, scores):
 # assigning DAL values
 # assume input is a string (1 sentence)
 # return pleasant, activation, intensity vectors
+TODO
 def assign_dal(sent, dal):
 	tokens = sent.split()
 	pleasant = []
@@ -86,6 +88,27 @@ def assign_dal(sent, dal):
 		try:
 			pleasant.append(dal[t][0])
 		except:
+			result = None
+			syns = wn.synsets(t)
+			setlen = len(syns)
+			synlen = len(syns[0])
+			x, y = 0
+
+			while result is None and x < setlen:
+				while result is None and y < synlen:
+					try:
+						pleasant.append(dal[syns[x].lemmas()[y].name()][0])
+						result = True
+					except:
+						y += 1
+				y = 0
+				x += 1
+				synlen = len(syns[x])
+
+			if result is None and syns.lemmas()[0].antonyms():
+
+
+
 			pleasant.append(0.0)
 		try:
 			activation.append(dal[t][1])
@@ -98,6 +121,27 @@ def assign_dal(sent, dal):
 		
 
 	return pleasant, activation, intensity
+
+
+# Z-normalize scores using mean and stdev found in manual (Whissel, 1989)
+# boost score by multiplying by normalized score distance from mean
+# https://www.god-helmet.com/wp/whissel-dictionary-of-affect/index.htm
+# plea(santry): mean 1.85, stdev 0.36
+# acti(vation): mean 1.67, stdev 0.36
+# inte(sity):	mean 1.52, stdev 0.63
+def normalize_dal(plea, acti, inte):
+	meanp, stdevp = 1.85, 0.36
+	meana, stdeva = 1.67, 0.36
+	meani, stdevi = 1.52, 0.63
+	for x in range(len(plea)):
+		plea[x] = (plea[x] - meanp) / stdevp
+		plea[x] *= abs(plea[x] - meanp)
+		acti[x] = (acti[x] - meana) / stdeva
+		acti[x] *= abs(acti[x] - meana)
+		inte[x] = (inte[x] - meani) / stdevi
+		inte[x] *= (inte[x] = meani)
+
+	return plea, acti, inte
 
 
 # input three vectors: pleasant, activation, intensity
@@ -118,10 +162,12 @@ def add_norm(p, a, i):
 	return math.pow(math.pow(i, 2) + math.pow(a, 2), 0.5) / i
 
 
-# Not sure what's going on here
-def chunk(sent):
-	# http://www.chokkan.org/software/crfsuite/tutorial.html
-
+# count number of occurrences of each POS in subjective phrase
+# represent POS as integer in feature vector
+# bigrams as binary feature vector
+# original uses Stanford Tagger --> use NLTK interface to Stanford Tagger
+def extract_lexical(sent):
+	
 
 
 
