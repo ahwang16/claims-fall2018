@@ -2,6 +2,9 @@
 
 import math
 from nltk.corpus import wordnet as wn
+import nltk
+from collections import Counter
+
 
 def dal():
 	daldict = {}
@@ -166,8 +169,21 @@ def add_norm(p, a, i):
 # represent POS as integer in feature vector
 # bigrams as binary feature vector
 # original uses Stanford Tagger --> use NLTK interface to Stanford Tagger
-def extract_lexical(sent):
-	
+# type phrase: str, one subjective phrase
+# rtype counts: Counter, tag : freq
+# rtype bg: generator of bigrams in phrase
+def extract_lexical(phrase):
+	tokens = nltk.word_tokenize(phrase)
+	text = nltk.Text(tokens)
+	tags = nltk.pos_tag(text)
+	counts = Counter(tag for word, tag in tags)
+
+	bg = nltk.bigrams(phrase.split())
+	return counts, bg
+
+
+
+
 
 
 
