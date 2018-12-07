@@ -182,6 +182,10 @@ def extract_lexical(phrase):
 	return counts, bg
 
 
+def chunk(sent):
+	
+
+
 
 
 
