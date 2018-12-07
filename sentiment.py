@@ -79,51 +79,108 @@ def fsm_negate(sent, scores):
 
 # assigning DAL values
 # assume input is a string (1 sentence)
-# return pleasant, activation, intensity vectors
+# return pleasant, activation, imagery vectors
 TODO
 def assign_dal(sent, dal):
 	tokens = sent.split()
 	pleasant = []
 	activation = []
-	intensity = []
+	imagery = []
 
 	for t in tokens:
 		try:
 			pleasant.append(dal[t][0])
 		except:
-			result = None
-			syns = wn.synsets(t)
-			setlen = len(syns)
-			synlen = len(syns[0])
-			x, y = 0
-
-			while result is None and x < setlen:
-				while result is None and y < synlen:
-					try:
-						pleasant.append(dal[syns[x].lemmas()[y].name()][0])
-						result = True
-					except:
-						y += 1
-				y = 0
-				x += 1
-				synlen = len(syns[x])
-
-			if result is None and syns.lemmas()[0].antonyms():
-
-
-
-			pleasant.append(0.0)
+			pleasant.append(pleasant(sent, dal))
 		try:
 			activation.append(dal[t][1])
 		except:
-			activation.append(0.0)
+			activation.append(activation(sent, dal))
 		try:
-			intensity.append(dal[t][2])
+			imager.append(dal[t][2])
 		except:
-			intensity.append(0.0)
+			imagery.append(imagery(sent, dal))
 		
 
-	return pleasant, activation, intensity
+	return pleasant, activation, imagery
+
+
+def pleasant(sent, dal):
+	syns = wn.synsets(t)
+	setlen = len(syns)
+	synlen = len(syns[0])
+	x, y = 0
+
+	while x < setlen:
+		while y < synlen:
+			try:
+				return dal[syns[x].lemmas()[y].name()][0]
+			except:
+				y += 1
+		y = 0
+		x += 1
+		synlen = len(syns[x])
+
+	for syn in syns:
+		for l in syn.lemmas():
+			ants = l.antonyms()
+			if ants:
+				for a in ants:
+					try:
+						return -1 * dal[a.name()][0]
+	return 0.0
+
+
+def activation(sent, dal):
+	syns = wn.synsets(t)
+	setlen = len(syns)
+	synlen = len(syns[0])
+	x, y = 0
+
+	while x < setlen:
+		while y < synlen:
+			try:
+				return dal[syns[x].lemmas()[y].name()][1]
+			except:
+				y += 1
+		y = 0
+		x += 1
+		synlen = len(syns[x])
+
+	for syn in syns:
+		for l in syn.lemmas():
+			ants = l.antonyms()
+			if ants:
+				for a in ants:
+					try:
+						return -1 * dal[a.name()][1]
+	return 0.0
+
+
+def imagery(sent, dal):
+	syns = wn.synsets(t)
+	setlen = len(syns)
+	synlen = len(syns[0])
+	x, y = 0
+
+	while x < setlen:
+		while y < synlen:
+			try:
+				return dal[syns[x].lemmas()[y].name()][2]
+			except:
+				y += 1
+		y = 0
+		x += 1
+		synlen = len(syns[x])
+
+	for syn in syns:
+		for l in syn.lemmas():
+			ants = l.antonyms()
+			if ants:
+				for a in ants:
+					try:
+						return -1 * dal[a.name()][2]
+	return 0.0
 
 
 # Z-normalize scores using mean and stdev found in manual (Whissel, 1989)
@@ -131,8 +188,8 @@ def assign_dal(sent, dal):
 # https://www.god-helmet.com/wp/whissel-dictionary-of-affect/index.htm
 # plea(santry): mean 1.85, stdev 0.36
 # acti(vation): mean 1.67, stdev 0.36
-# inte(sity):	mean 1.52, stdev 0.63
-def normalize_dal(plea, acti, inte):
+# imag(ery):	mean 1.52, stdev 0.63
+def normalize_dal(plea, acti, imag):
 	meanp, stdevp = 1.85, 0.36
 	meana, stdeva = 1.67, 0.36
 	meani, stdevi = 1.52, 0.63
@@ -141,24 +198,24 @@ def normalize_dal(plea, acti, inte):
 		plea[x] *= abs(plea[x] - meanp)
 		acti[x] = (acti[x] - meana) / stdeva
 		acti[x] *= abs(acti[x] - meana)
-		inte[x] = (inte[x] - meani) / stdevi
-		inte[x] *= (inte[x] = meani)
+		imag[x] = (imag[x] - meani) / stdevi
+		imag[x] *= (imag[x] = meani)
 
-	return plea, acti, inte
+	return plea, acti, imag
 
 
-# input three vectors: pleasant, activation, intensity
-# return averages of pleasantness, activation, intensity
+# input three vectors: pleasant, activation, imagery
+# return averages of pleasantness, activation, imagery
 # this method should be used for subjective phrases (not whole sent)
-def compute_phrases(plea, acti, inte):
+def compute_phrases(plea, acti, imag):
 	p = sum(plea) / len(plea)
 	a = sum(acti) / len(acti)
-	i = sum(inte) / len(inte)
+	i = sum(imag) / len(imag)
 
 	return p, a, i
 
 
-# input three floats: pleasant, activation, intensity average for phrase
+# input three floats: pleasant, activation, imagery average for phrase
 # return norm (combination of the three scores)
 # need to call this method after calling compute_phrases()
 def add_norm(p, a, i):

@@ -23,21 +23,26 @@ def parse(f):
 	texttostring = et.tostring(text, encoding="utf8", method="xml").decode()
 	# print(texttostring)
 	openbracket = False
+	leftbracket = False
 	finaltext = ""
 	x = 0
+
+
+	# replace html left tag with <
 
 	while x < len(texttostring)-1:
 		#print(json.dumps(texttostring[x]))
 		if texttostring[x] == "<":
 			openbracket = True
 		elif texttostring[x] == "&" and texttostring[x+1]=="l" and texttostring[x+2]=="t" and texttostring[x+3]==";":
-			openbracket = True
+			openbracket = False
+			finaltext += "<"
 			x += 3
 		elif texttostring[x] == ">":
 			openbracket = False
-		elif texttostring[x] == "&" and texttostring[x+1]=="g" and texttostring[x+2]=="t" and texttostring[x+3]==";":
-			openbracket = False
-			x += 3
+		# elif texttostring[x] == "&" and texttostring[x+1]=="g" and texttostring[x+2]=="t" and texttostring[x+3]==";":
+		# 	openbracket = False
+		# 	x += 3
 		elif not openbracket:
 			#finaltext += texttostring[x]
 			if texttostring[x] == "\n":
