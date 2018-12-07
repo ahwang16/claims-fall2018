@@ -35,6 +35,7 @@ def parse(doc_name, ann_name, sent_name):
 	ann = open(ann_name, "r")
 	sen = open(sent_name, "r")
 	out = open("sentimentphrases.txt", "w")
+	out1 = open("sentimentsents.txt", "w")
 
 	# skip initial comment lines
 	while True:
@@ -97,7 +98,7 @@ def parse(doc_name, ann_name, sent_name):
 
 		sents.append(sent)
 
-		out.write("{}\n".format(sent))
+		out1.write("{}\n".format(sent))
 
 		line = sen.readline()
 
