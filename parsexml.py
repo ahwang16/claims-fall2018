@@ -40,9 +40,10 @@ def parse(f):
 			x += 3
 		elif texttostring[x] == ">":
 			openbracket = False
-		# elif texttostring[x] == "&" and texttostring[x+1]=="g" and texttostring[x+2]=="t" and texttostring[x+3]==";":
-		# 	openbracket = False
-		# 	x += 3
+		elif texttostring[x] == "&" and texttostring[x+1]=="g" and texttostring[x+2]=="t" and texttostring[x+3]==";":
+			finaltext += ">"
+			openbracket = False
+			x += 3
 		elif not openbracket:
 			#finaltext += texttostring[x]
 			if texttostring[x] == "\n":
@@ -53,7 +54,7 @@ def parse(f):
 				finaltext += texttostring[x].strip('\n')
 		x += 1
 	finaltext = finaltext[1:]
-	print(finaltext)
+	#print(finaltext)
 	attribs = []
 	for child in anno:
 		attribs.append((int(child.attrib['StartNode']), int(child.attrib['EndNode']), child.attrib['Type']))
@@ -83,19 +84,19 @@ def parse(f):
 
 	spacy_sents = list(doc.sents) # doc.sents is a list of spans
 	startnode = 0
-	print(sorted(startlabel))
+	#print(sorted(startlabel))
 
 	for sent in spacy_sents:
 		s = []
 		l = []
 		for word in sent:
 			s.append(word)
-			print(word, startnode)
+			#print(word, startnode)
 			if startnode in start:
 				l.append(startlabel[startnode])
 			else:
 				l.append("Not Applicable")
-			print(l[-1])
+			#print(l[-1])
 			startnode += len(word.string)
 		sents.append(s)
 		labels.append(l)
