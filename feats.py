@@ -1,4 +1,11 @@
 # feats.py
+'''
+feats
+0: lexical and syntactic, no context
+1: lexical with context
+2: lexical with context, syntactic no conext
+3: lexical and syntactic with context
+'''
 
 from itertools import chain
 import nltk
@@ -9,13 +16,13 @@ import pycrfsuite
 import spacy
 import parsexml
 from collections import Counter
-import os
+import os, sys
 
 
 
 # Functions to extract features
 # For the ith word in a sentence, return list of features
-def word2feats(sent, i) :
+def word2feats(sent, i, feature) :
 	token = sent[i]
 #	print(sent, i)
 #	print("token:", token, ", token type:", type(token), ", sent type:", type(sent))
@@ -49,50 +56,53 @@ def word2feats(sent, i) :
 	'''
 
 	# lexical and syntactic features with no context
-	feats = [
-		"POS=" + token.pos_,
-		"whichModalAmI=" + token.text if token.tag_ == "MD" else "nil",
-		"parentPOS=" + token.head.pos_,
+	if feature == 0:
+		feats = [
+			"POS=" + token.pos_,
+			"whichModalAmI=" + token.text if token.tag_ == "MD" else "nil",
+			"parentPOS=" + token.head.pos_,
 
-	]
+		]
 
-	'''
 	# lexical features with context
-	feats = [
-		"POS=" + token.pos_,
-		"whichModalAmI=" + token.text if token.tag_ == "MD" else "nil",
-		"verbType=" + token.tag_ if token.pos_ == "VERB" else "nil",
-		"isNumeric%s" % token.is_alpha,
-		"haveReportingAncestor=%s" % token.pos_=="VERB" and len(lemmas.intersection(ancestors))!=0,
-		"whichModalIsMyDaughter=" + moddaughter,
-		"whichAuxIsMyDaughter=" + auxdaughter,
-		"haveDaughterShould=%s" % "should" in daughters
-	]
+	elif feature == 1:
+		feats = [
+			"POS=" + token.pos_,
+			"whichModalAmI=" + token.text if token.tag_ == "MD" else "nil",
+			"verbType=" + token.tag_ if token.pos_ == "VERB" else "nil",
+			"isNumeric%s" % token.is_alpha,
+			"haveReportingAncestor=%s" % token.pos_=="VERB" and len(lemmas.intersection(ancestors))!=0,
+			"whichModalIsMyDaughter=" + moddaughter,
+			"whichAuxIsMyDaughter=" + auxdaughter,
+			"haveDaughterShould=%s" % "should" in daughters
+		]
 
 	# lexical features with context and syntactic features with no context
-	feats = [
-		"POS=" + token.pos_,
-		"whichModalAmI=" + token.text if token.tag_ == "MD" else "nil",
-		"parentPOS=" + token.head.pos_,
-		"haveReportingAncestor=%s" % token.pos_=="VERB" and len(lemmas.intersection(ancestors))!=0,
-		"whichModalIsMyDaughter=" + moddaughter,
-		"whichAuxIsMyDaughter=" + auxdaughter,
-		"haveDaughterShould=%s" % "should" in daughters
-	]
+	elif feature == 2:
+		feats = [
+			"POS=" + token.pos_,
+			"whichModalAmI=" + token.text if token.tag_ == "MD" else "nil",
+			"parentPOS=" + token.head.pos_,
+			"haveReportingAncestor=%s" % token.pos_=="VERB" and len(lemmas.intersection(ancestors))!=0,
+			"whichModalIsMyDaughter=" + moddaughter,
+			"whichAuxIsMyDaughter=" + auxdaughter,
+			"haveDaughterShould=%s" % "should" in daughters
+		]
 
 	# lexical and syntactic features with context
-	feats = [
-		"POS=" + token.pos_,
-		"whichModalAmI=" + token.text if token.tag_ == "MD" else "nil",
-		"parentPOS=" + token.head.pos_,
-		"haveReportingAncestor=%s" % token.pos_=="VERB" and len(lemmas.intersection(ancestors))!=0,
-		"whichModalIsMyDaughter=" + moddaughter,
-		"haveDaughterPerfect=%s" % "has" in daughters or "have" in daughters or "had" in daughters,
-		"whichAuxIsMyDaughter=" + auxdaughter,
-		"haveDaughterWh=%s" % "where" in daughters or "when" in daughters or "while" in daughters or "who" in daughters or "why" in daughters,
-		"haveDaughterShould=%s" % "should" in daughters
-	]
-	'''
+	elif feature == 3:
+		feats = [
+			"POS=" + token.pos_,
+			"whichModalAmI=" + token.text if token.tag_ == "MD" else "nil",
+			"parentPOS=" + token.head.pos_,
+			"haveReportingAncestor=%s" % token.pos_=="VERB" and len(lemmas.intersection(ancestors))!=0,
+			"whichModalIsMyDaughter=" + moddaughter,
+			"haveDaughterPerfect=%s" % "has" in daughters or "have" in daughters or "had" in daughters,
+			"whichAuxIsMyDaughter=" + auxdaughter,
+			"haveDaughterWh=%s" % "where" in daughters or "when" in daughters or "while" in daughters or "who" in daughters or "why" in daughters,
+			"haveDaughterShould=%s" % "should" in daughters
+		]
+	
 
 	return feats
  
@@ -101,8 +111,8 @@ def word2feats(sent, i) :
 
 # Return list of lists of features for each word in a sentence
 # sent is a sentence parsed by spacy
-def sent2feats(sent) :
-	return [word2feats(sent, i) for i in range(len(sent))]
+def sent2feats(sent, feature) :
+	return [word2feats(sent, i, feature) for i in range(len(sent))]
 
 
 def classify(y_true, y_pred):
@@ -155,11 +165,11 @@ if __name__ == "__main__":
 
 	# CRFsuite tutorial from github
 	# https://github.com/scrapinghub/python-crfsuite/blob/master/examples/CoNLL%202002.ipynb
-
+	feature = sys.argv[1]
 	# Extract features from data
-	X_train = [sent2feats(s) for s in sents]
+	X_train = [sent2feats(s, feature) for s in sents]
 	y_train = labels
-	X_test = [sent2feats(s) for s in test_sents]
+	X_test = [sent2feats(s, feature) for s in test_sents]
 	y_test = test_labels
 
 	# Train model
