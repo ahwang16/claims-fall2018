@@ -1,0 +1,584 @@
+20000415_apw_eng-New.xml
+done!
+20000416_xin_eng-NEW.xml
+done!
+20000419_apw_eng-NEW.xml
+done!
+20000420_xin_eng-NEW.xml
+done!
+20000424_nyt-NEW.xml
+done!
+20000815_AFP_ARB.0084.IBM-HA-NEW.txt.en.xml
+done!
+602CZL285-1.xml
+done!
+A1.E1-NEW.xml
+done!
+A1.E2-NEW.xml
+done!
+AFGP-2002-600002-Trans.xml
+done!
+AFGP-2002-600045-Trans.xml
+done!
+AFGP-2002-600175-Trans.xml
+done!
+CNN_AARONBROWN_ENG_20051101_215800.partial-NEW.xml
+done!
+CNN_ENG_20030614_173123.4-NEW-1.xml
+done!
+ENRON-pearson-email-25jul02.xml
+done!
+enron-thread-159550.xml
+done!
+wsj_2465.xml
+done!
+[[['POS=PROPN', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NOUN', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADP', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PROPN', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NOUN', 'nil', 'parentPOS=ADP', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADP', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PROPN', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PROPN', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=SPACE', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PROPN', 'nil', 'parentPOS=ADP', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=X', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NOUN', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False']], [['POS=X', 'nil', 'parentPOS=X', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False']], [['POS=DET', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADJ', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NOUN', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=True', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=True', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PART', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=True', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PROPN', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PROPN', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PROPN', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PROPN', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=True', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=DET', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NOUN', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADJ', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NOUN', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PART', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=True', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=DET', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADJ', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NOUN', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADJ', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=True', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=True', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADP', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=DET', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PROPN', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PROPN', 'nil', 'parentPOS=ADP', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADP', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NUM', 'nil', 'parentPOS=ADP', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PUNCT', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PROPN', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PART', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NOUN', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PROPN', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PUNCT', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=SPACE', 'nil', 'parentPOS=PUNCT', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False']], [['POS=DET', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PROPN', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PROPN', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PUNCT', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NOUN', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADP', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADJ', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NOUN', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NOUN', 'nil', 'parentPOS=ADP', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PROPN', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PROPN', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=CCONJ', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PROPN', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PROPN', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PUNCT', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'whichModalAmI=will', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=will', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NUM', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NOUN', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NOUN', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=CCONJ', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADJ', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NOUN', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PART', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NOUN', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADV', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NOUN', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADJ', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADP', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NOUN', 'nil', 'parentPOS=ADP', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=CCONJ', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADJ', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADJ', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NOUN', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PUNCT', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=SPACE', 'nil', 'parentPOS=PUNCT', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False']], [['POS=PROPN', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADP', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADJ', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NOUN', 'nil', 'parentPOS=ADP', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADP', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=DET', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NOUN', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PUNCT', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADJ', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=DET', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=True', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=True', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=DET', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NOUN', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PART', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NOUN', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PART', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=True', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADP', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=DET', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NOUN', 'nil', 'parentPOS=ADP', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADP', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=DET', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NOUN', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NOUN', 'nil', 'parentPOS=ADP', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PUNCT', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=SPACE', 'nil', 'parentPOS=PUNCT', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False']], [['POS=DET', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PROPN', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PROPN', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PROPN', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADJ', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADP', 'nil', 'parentPOS=ADJ', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=DET', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NOUN', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PART', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADJ', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NOUN', 'nil', 'parentPOS=ADP', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PUNCT', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADP', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=DET', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NOUN', 'nil', 'parentPOS=ADP', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADP', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=DET', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PROPN', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PROPN', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PROPN', 'nil', 'parentPOS=ADP', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PUNCT', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=SPACE', 'nil', 'parentPOS=PUNCT', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False']], [['POS=ADP', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NUM', 'nil', 'parentPOS=ADP', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=DET', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NOUN', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADP', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADJ', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADP', 'nil', 'parentPOS=ADJ', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=DET', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NOUN', 'nil', 'parentPOS=ADP', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=True', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADP', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=DET', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NOUN', 'nil', 'parentPOS=ADP', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADP', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PUNCT', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NOUN', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NOUN', 'nil', 'parentPOS=ADP', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PUNCT', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PUNCT', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=SPACE', 'nil', 'parentPOS=PUNCT', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False']], [['POS=PROPN', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'whichModalAmI=will', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=will', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADV', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=DET', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADJ', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NOUN', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADP', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PROPN', 'nil', 'parentPOS=ADP', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PART', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADP', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PROPN', 'nil', 'parentPOS=ADP', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADP', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=DET', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NOUN', 'nil', 'parentPOS=ADP', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PUNCT', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADP', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PROPN', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PART', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NOUN', 'nil', 'parentPOS=ADP', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PUNCT', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=SPACE', 'nil', 'parentPOS=PUNCT', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False']], [['POS=DET', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADJ', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NOUN', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADV', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PUNCT', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PROPN', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PROPN', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PROPN', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PROPN', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADP', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PROPN', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PROPN', 'nil', 'parentPOS=ADP', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PUNCT', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NOUN', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PART', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=DET', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NOUN', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADP', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PROPN', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NOUN', 'nil', 'parentPOS=ADP', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADP', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADJ', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NOUN', 'nil', 'parentPOS=ADP', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PUNCT', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=SPACE', 'nil', 'parentPOS=PUNCT', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False']], [['POS=X', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PUNCT', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PROPN', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=SYM', 'nil', 'parentPOS=X', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NUM', 'nil', 'parentPOS=X', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=X', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False']], [['POS=PROPN', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADP', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PROPN', 'nil', 'parentPOS=ADP', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PUNCT', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PROPN', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PUNCT', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADP', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PROPN', 'nil', 'parentPOS=ADP', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PUNCT', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADV', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PRON', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', "whichModalAmI='ll", 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', "whichModalIsMyDaughter='ll", 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=DET', 'nil', 'parentPOS=NOUN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NOUN', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADP', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'nil', 'parentPOS=ADP', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADP', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PROPN', 'nil', 'parentPOS=ADP', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PUNCT', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=SPACE', 'nil', 'parentPOS=PUNCT', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False']], [['POS=NOUN', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADV', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADP', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PROPN', 'nil', 'parentPOS=ADP', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PUNCT', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False']], [['POS=PROPN', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PART', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADP', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PROPN', 'nil', 'parentPOS=ADP', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADP', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PROPN', 'nil', 'parentPOS=ADP', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=NUM', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PUNCT', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=SPACE', 'nil', 'parentPOS=PUNCT', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False']], [['POS=PROPN', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=VERB', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=ADP', 'nil', 'parentPOS=VERB', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PROPN', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=PROPN', 'nil', 'parentPOS=ADP', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False'], ['POS=SPACE', 'nil', 'parentPOS=PROPN', 'haveReportingAncestor=False', 'whichModalIsMyDaughter=nil', 'whichAuxIsMyDaughter=nil', 'haveDaughterShould=False']]] 
+ [['Not Applicable', 'Committed Belief', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable'], ['Not Applicable'], ['Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Committed Belief', 'Committed Belief', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Non-Committed Belief Future', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Committed Belief', 'Not Applicable', 'Not Applicable', 'Committed Belief', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable'], ['Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Committed Belief', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Committed Belief', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Committed Belief Future', 'Not Applicable', 'Not Applicable', 'Committed Belief Future', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Committed Belief', 'Not Applicable', 'Not Applicable', 'Committed Belief', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Committed Belief', 'Not Applicable', 'Not Applicable', 'Not Applicable'], ['Not Applicable', 'Not Applicable', 'Committed Belief', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Committed Belief', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Committed Belief', 'Not Applicable', 'Non-Committed Belief', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Non-Committed Belief', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Committed Belief', 'Not Applicable', 'Not Applicable', 'Committed Belief', 'Not Applicable', 'Not Applicable', 'Not Applicable'], ['Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Non-Committed Belief', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Committed Belief', 'Not Applicable', 'Not Applicable', 'Committed Belief', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable'], ['Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Committed Belief', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Non-Committed Belief', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Non-Committed Belief', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable'], ['Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Non-Committed Belief Future', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Committed Belief', 'Not Applicable', 'Committed Belief', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable'], ['Not Applicable', 'Not Applicable', 'Not Applicable', 'Committed Belief', 'Not Applicable', 'Not Applicable', 'Committed Belief', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Committed Belief', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Committed Belief', 'Not Applicable', 'Not Applicable', 'Not Applicable'], ['Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable'], ['Not Applicable', 'Committed Belief Future', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Non-Committed Belief Future', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Non-Committed Belief Future', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable'], ['Not Applicable', 'Not Applicable', 'Committed Belief', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable'], ['Not Applicable', 'Committed Belief', 'Non-Committed Belief Future', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable'], ['Not Applicable', 'Committed Belief', 'Not Applicable', 'Not Applicable', 'Not Applicable', 'Not Applicable']]
+Feature generation
+type: CRF1d
+feature.minfreq: 0.000000
+feature.possible_states: 0
+feature.possible_transitions: 1
+0....1....2....3....4....5....6....7....8....9....10
+Number of features: 104
+Seconds required: 0.001
+
+L-BFGS optimization
+c1: 1.000000
+c2: 0.001000
+num_memories: 6
+max_iterations: 50
+epsilon: 0.000010
+stop: 10
+delta: 0.000010
+linesearch: MoreThuente
+linesearch.max_iterations: 20
+
+***** Iteration #1 *****
+Loss: 172.336012
+Feature norm: 1.000000
+Error norm: 53.977697
+Active features: 94
+Line search trials: 1
+Line search step: 0.002018
+Seconds required for this iteration: 0.001
+
+***** Iteration #2 *****
+Loss: 166.754403
+Feature norm: 1.069181
+Error norm: 43.366807
+Active features: 87
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.004
+
+***** Iteration #3 *****
+Loss: 154.739022
+Feature norm: 1.366933
+Error norm: 35.543533
+Active features: 76
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.000
+
+***** Iteration #4 *****
+Loss: 149.989357
+Feature norm: 1.653033
+Error norm: 62.361459
+Active features: 78
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.000
+
+***** Iteration #5 *****
+Loss: 144.321348
+Feature norm: 1.779612
+Error norm: 18.709373
+Active features: 67
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.000
+
+***** Iteration #6 *****
+Loss: 141.558586
+Feature norm: 1.996104
+Error norm: 17.796082
+Active features: 64
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.000
+
+***** Iteration #7 *****
+Loss: 138.540972
+Feature norm: 2.234238
+Error norm: 17.516769
+Active features: 57
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.000
+
+***** Iteration #8 *****
+Loss: 135.875613
+Feature norm: 2.453162
+Error norm: 8.800605
+Active features: 60
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.000
+
+***** Iteration #9 *****
+Loss: 134.232797
+Feature norm: 2.779474
+Error norm: 7.891216
+Active features: 55
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.000
+
+***** Iteration #10 *****
+Loss: 132.829316
+Feature norm: 3.025783
+Error norm: 24.178089
+Active features: 48
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.001
+
+***** Iteration #11 *****
+Loss: 131.245393
+Feature norm: 3.244155
+Error norm: 6.039889
+Active features: 51
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.001
+
+***** Iteration #12 *****
+Loss: 131.084029
+Feature norm: 3.519182
+Error norm: 20.073657
+Active features: 45
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.001
+
+***** Iteration #13 *****
+Loss: 130.130666
+Feature norm: 3.576474
+Error norm: 4.306929
+Active features: 47
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.001
+
+***** Iteration #14 *****
+Loss: 130.042071
+Feature norm: 3.623557
+Error norm: 7.872860
+Active features: 44
+Line search trials: 2
+Line search step: 0.500000
+Seconds required for this iteration: 0.001
+
+***** Iteration #15 *****
+Loss: 129.819520
+Feature norm: 3.697538
+Error norm: 4.919260
+Active features: 42
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.001
+
+***** Iteration #16 *****
+Loss: 129.557579
+Feature norm: 3.774276
+Error norm: 6.333431
+Active features: 40
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.001
+
+***** Iteration #17 *****
+Loss: 129.101999
+Feature norm: 3.898799
+Error norm: 7.222016
+Active features: 42
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.001
+
+***** Iteration #18 *****
+Loss: 128.745603
+Feature norm: 4.100897
+Error norm: 13.080583
+Active features: 40
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.001
+
+***** Iteration #19 *****
+Loss: 128.256970
+Feature norm: 4.235832
+Error norm: 3.344604
+Active features: 40
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.001
+
+***** Iteration #20 *****
+Loss: 128.180123
+Feature norm: 4.246344
+Error norm: 2.151596
+Active features: 38
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.001
+
+***** Iteration #21 *****
+Loss: 127.907874
+Feature norm: 4.214590
+Error norm: 2.142087
+Active features: 36
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.001
+
+***** Iteration #22 *****
+Loss: 127.652807
+Feature norm: 4.293251
+Error norm: 6.091465
+Active features: 33
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.001
+
+***** Iteration #23 *****
+Loss: 127.470735
+Feature norm: 4.267612
+Error norm: 4.007066
+Active features: 29
+Line search trials: 2
+Line search step: 0.500000
+Seconds required for this iteration: 0.001
+
+***** Iteration #24 *****
+Loss: 127.467383
+Feature norm: 4.301920
+Error norm: 7.897770
+Active features: 28
+Line search trials: 2
+Line search step: 0.500000
+Seconds required for this iteration: 0.001
+
+***** Iteration #25 *****
+Loss: 127.349932
+Feature norm: 4.262563
+Error norm: 8.609063
+Active features: 27
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.001
+
+***** Iteration #26 *****
+Loss: 127.166789
+Feature norm: 4.296238
+Error norm: 1.939866
+Active features: 27
+Line search trials: 2
+Line search step: 0.500000
+Seconds required for this iteration: 0.001
+
+***** Iteration #27 *****
+Loss: 127.140587
+Feature norm: 4.295189
+Error norm: 3.917935
+Active features: 26
+Line search trials: 2
+Line search step: 0.500000
+Seconds required for this iteration: 0.001
+
+***** Iteration #28 *****
+Loss: 127.086449
+Feature norm: 4.309081
+Error norm: 2.407233
+Active features: 26
+Line search trials: 2
+Line search step: 0.500000
+Seconds required for this iteration: 0.001
+
+***** Iteration #29 *****
+Loss: 127.053516
+Feature norm: 4.305180
+Error norm: 3.633023
+Active features: 27
+Line search trials: 2
+Line search step: 0.500000
+Seconds required for this iteration: 0.001
+
+***** Iteration #30 *****
+Loss: 127.005430
+Feature norm: 4.327109
+Error norm: 2.179192
+Active features: 27
+Line search trials: 2
+Line search step: 0.500000
+Seconds required for this iteration: 0.001
+
+***** Iteration #31 *****
+Loss: 126.980153
+Feature norm: 4.325372
+Error norm: 2.870586
+Active features: 26
+Line search trials: 2
+Line search step: 0.500000
+Seconds required for this iteration: 0.001
+
+***** Iteration #32 *****
+Loss: 126.955521
+Feature norm: 4.357903
+Error norm: 3.037377
+Active features: 26
+Line search trials: 2
+Line search step: 0.500000
+Seconds required for this iteration: 0.001
+
+***** Iteration #33 *****
+Loss: 126.935513
+Feature norm: 4.350535
+Error norm: 1.174902
+Active features: 28
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.001
+
+***** Iteration #34 *****
+Loss: 126.893839
+Feature norm: 4.388031
+Error norm: 2.561516
+Active features: 27
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.001
+
+***** Iteration #35 *****
+Loss: 126.871187
+Feature norm: 4.416743
+Error norm: 4.200222
+Active features: 28
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.001
+
+***** Iteration #36 *****
+Loss: 126.828790
+Feature norm: 4.442567
+Error norm: 2.744923
+Active features: 28
+Line search trials: 2
+Line search step: 0.500000
+Seconds required for this iteration: 0.001
+
+***** Iteration #37 *****
+Loss: 126.798842
+Feature norm: 4.461076
+Error norm: 1.349393
+Active features: 28
+Line search trials: 2
+Line search step: 0.500000
+Seconds required for this iteration: 0.001
+
+***** Iteration #38 *****
+Loss: 126.794393
+Feature norm: 4.484992
+Error norm: 3.726922
+Active features: 27
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.001
+
+***** Iteration #39 *****
+Loss: 126.746763
+Feature norm: 4.519328
+Error norm: 1.594610
+Active features: 27
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.001
+
+***** Iteration #40 *****
+Loss: 126.723647
+Feature norm: 4.546455
+Error norm: 3.180882
+Active features: 27
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.001
+
+***** Iteration #41 *****
+Loss: 126.710984
+Feature norm: 4.579442
+Error norm: 3.460586
+Active features: 27
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.001
+
+***** Iteration #42 *****
+Loss: 126.673758
+Feature norm: 4.600040
+Error norm: 1.631718
+Active features: 27
+Line search trials: 2
+Line search step: 0.500000
+Seconds required for this iteration: 0.001
+
+***** Iteration #43 *****
+Loss: 126.657601
+Feature norm: 4.599296
+Error norm: 1.446648
+Active features: 27
+Line search trials: 2
+Line search step: 0.500000
+Seconds required for this iteration: 0.001
+
+***** Iteration #44 *****
+Loss: 126.648201
+Feature norm: 4.608819
+Error norm: 1.167067
+Active features: 27
+Line search trials: 3
+Line search step: 0.250000
+Seconds required for this iteration: 0.001
+
+***** Iteration #45 *****
+Loss: 126.642355
+Feature norm: 4.608652
+Error norm: 2.075514
+Active features: 27
+Line search trials: 2
+Line search step: 0.500000
+Seconds required for this iteration: 0.001
+
+***** Iteration #46 *****
+Loss: 126.630246
+Feature norm: 4.627041
+Error norm: 2.050043
+Active features: 27
+Line search trials: 2
+Line search step: 0.500000
+Seconds required for this iteration: 0.001
+
+***** Iteration #47 *****
+Loss: 126.628770
+Feature norm: 4.632676
+Error norm: 2.665392
+Active features: 27
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.001
+
+***** Iteration #48 *****
+Loss: 126.611445
+Feature norm: 4.650128
+Error norm: 1.812295
+Active features: 27
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.001
+
+***** Iteration #49 *****
+Loss: 126.603847
+Feature norm: 4.651614
+Error norm: 1.003854
+Active features: 27
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.001
+
+***** Iteration #50 *****
+Loss: 126.599568
+Feature norm: 4.660827
+Error norm: 1.191103
+Active features: 27
+Line search trials: 1
+Line search step: 1.000000
+Seconds required for this iteration: 0.001
+
+L-BFGS terminated with the maximum number of iterations
+Total seconds required for training: 0.041
+
+Storing the model
+Number of active features: 27 (104)
+Number of active attributes: 15 (32)
+Number of active labels: 5 (5)
+Writing labels
+Writing attributes
+Writing feature references for transitions
+Writing feature references for attributes
+Seconds required: 0.000
+
+                             precision    recall  f1-score   support
+
+           Committed Belief       0.25      0.12      0.16      1308
+       Non-Committed Belief       0.00      0.00      0.00       294
+    Committed Belief Future       0.00      0.00      0.00        51
+Non-Committed Belief Future       0.00      0.00      0.00        51
+             Not Applicable       0.91      0.98      0.94     15057
+
+                  micro avg       0.88      0.88      0.88     16761
+                  macro avg       0.23      0.22      0.22     16761
+               weighted avg       0.84      0.88      0.86     16761
+                samples avg       0.88      0.88      0.88     16761
+
+Top likely transitions:
+Not Applicable -> Committed Belief 0.888269
+Committed Belief -> Not Applicable 0.236992
+Not Applicable -> Not Applicable -0.172001
+
+Top unlikely transitions:
+Not Applicable -> Committed Belief 0.888269
+Committed Belief -> Not Applicable 0.236992
+Not Applicable -> Not Applicable -0.172001
+Top positive:
+1.544283 Not Applicable haveDaughterShould=False
+1.544283 Not Applicable whichAuxIsMyDaughter=nil
+1.261699 Not Applicable whichModalIsMyDaughter=nil
+1.133173 Non-Committed Belief Future POS=PART
+0.860766 Not Applicable POS=ADP
+0.744468 Committed Belief POS=NOUN
+0.589404 Not Applicable POS=PUNCT
+0.538480 Not Applicable POS=DET
+0.259720 Committed Belief POS=VERB
+0.243302 Not Applicable POS=PROPN
+0.204330 Committed Belief haveReportingAncestor=False
+0.180475 Committed Belief whichModalIsMyDaughter=nil
+0.112357 Not Applicable parentPOS=VERB
+0.058063 Committed Belief parentPOS=NOUN
+0.047851 Not Applicable haveReportingAncestor=False
+0.014888 Committed Belief POS=ADJ
+-0.045072 Not Applicable POS=NOUN
+-0.155433 Committed Belief haveReportingAncestor=True
+-0.466505 Non-Committed Belief Future whichModalIsMyDaughter=nil
+-0.467821 Non-Committed Belief haveReportingAncestor=False
+
+Top negative:
+0.860766 Not Applicable POS=ADP
+0.744468 Committed Belief POS=NOUN
+0.589404 Not Applicable POS=PUNCT
+0.538480 Not Applicable POS=DET
+0.259720 Committed Belief POS=VERB
+0.243302 Not Applicable POS=PROPN
+0.204330 Committed Belief haveReportingAncestor=False
+0.180475 Committed Belief whichModalIsMyDaughter=nil
+0.112357 Not Applicable parentPOS=VERB
+0.058063 Committed Belief parentPOS=NOUN
+0.047851 Not Applicable haveReportingAncestor=False
+0.014888 Committed Belief POS=ADJ
+-0.045072 Not Applicable POS=NOUN
+-0.155433 Committed Belief haveReportingAncestor=True
+-0.466505 Non-Committed Belief Future whichModalIsMyDaughter=nil
+-0.467821 Non-Committed Belief haveReportingAncestor=False
+-0.540992 Committed Belief parentPOS=VERB
+-0.864334 Committed Belief Future whichModalIsMyDaughter=nil
+-1.570675 Not Applicable POS=PART
+-2.661114 Not Applicable POS=VERB
